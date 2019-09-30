@@ -35,12 +35,12 @@ You need to CCC:
 - Create a list item for every course and append it to the given unordered list.
 - Calculate the total price of all courses the student has signed up for and update the cost.
 
-![example]("../z_resources/front-end-basics/media/image2.png")
+![example](../z_resources/front-end-basics/media/image2.png)
 
 Example:
 
-![example]("../z_resources/front-end-basics/media/image3.png")
-![example]("../z_resources/front-end-basics/media/image4.png")
+![example](../z_resources/front-end-basics/media/image3.png)
+![example](../z_resources/front-end-basics/media/image4.png)
 
 Hint
 
