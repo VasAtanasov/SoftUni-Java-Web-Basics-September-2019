@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i&display=swap");
+
+html {
+  box-sizing: border-box;
+  font: 12px/1.5 Arial, serif;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body,
+table,
+form,
+select,
+option,
+input,
+textarea {
+  font: inherit;
+  background: #fff;
+  color: #000;
+}
+
+textarea {
+  resize: none;
+}
+
+h1,
+.h1 {
+  font-size: 2.2em;
+}
+
+h2,
+.h2 {
+  font-size: 1.8em;
+}
+
+h3,
+.h3 {
+  font-size: 1.6em;
+}
+
+h4,
+.h4 {
+  font-size: 1.4em;
+}
+
+h5,
+.h5 {
+  font-size: 1.2em;
+}
+
+h6,
+.h6 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.strong {
+  font-weight: bold;
+}
