@@ -6,7 +6,7 @@ Exam problems for the “JavaScript Advanced” course @ SoftUni. Submit your so
 
 Use the given CSS files to create similar view and solve the problem.
 
-![site overview]("../z_resources/front-end-basics/media/image1.png")
+![site overview](../z_resources/front-end-basics/media/image1.png)
 
 ### Your task
 
