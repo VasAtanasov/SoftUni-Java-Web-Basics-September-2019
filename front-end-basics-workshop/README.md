@@ -46,3 +46,5 @@ Hint
 
 - A student can receive more than one discount.
 - The courses’ cost needs to be rounded to the closest integer, followed by two zeros.
+
+[Java-Web-Devolopment-Bascis-Workshop-Web-Fundamentals](../z_resources/front-end-basics/04.Java-Web-Devolopment-Bascis-Workshop-Web-Fundamentals.docx)
