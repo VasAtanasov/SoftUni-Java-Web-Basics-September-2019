@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/create")
-public class CarCreatServlet extends HttpServlet {
+@WebServlet("/all")
+public class CarAllServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/views/create.html").forward(req, resp);
+        req.getRequestDispatcher("/views/all.html").forward(req, resp);
     }
 }
