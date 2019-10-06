@@ -1,8 +1,10 @@
 package app.domain.entities;
 
+import app.domain.enums.Engine;
 import lombok.*;
 
 import javax.persistence.Column;
+import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -12,6 +14,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @ToString
 @Entity
+@Builder
 @Table(name = "cars")
 public class Car extends BaseEntity {
 
@@ -25,5 +28,6 @@ public class Car extends BaseEntity {
     private Integer year;
 
     @Column(name = "engine", nullable = false)
-    private String engine;
+    @Convert(converter = Engine.EngineConverter.class)
+    private Engine engine;
 }
