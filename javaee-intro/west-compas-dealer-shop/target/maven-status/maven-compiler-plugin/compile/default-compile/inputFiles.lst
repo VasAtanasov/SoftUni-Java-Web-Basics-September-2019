@@ -1,0 +1,10 @@
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/repository/CarRepository.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/config/ApplicationBeanConfiguration.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/domain/entities/Car.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/repository/CrudRepository.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/util/FileUtil.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/util/FileUtilImpl.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/domain/entities/BaseEntity.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/repository/CarRepositoryImpl.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/repository/BaseCrudRepository.java
+/mnt/c/Users/vasat/Desktop/GitHub/SoftUni-Java-Web-Basics-September-2019/javaee-intro/west-compas-dealer-shop/src/main/java/app/web/servlets/HomeServlet.java
