@@ -1,7 +1,8 @@
 package app.service;
 
 import app.domain.entities.Car;
-import app.domain.models.binding.CarCreateBindingModel;
+import app.domain.enums.Engine;
+import app.domain.models.service.CarCreateServiceModel;
 import app.domain.models.view.CarDetailsViewModel;
 import app.repository.CarRepository;
 import org.modelmapper.ModelMapper;
@@ -24,14 +25,15 @@ public class CarServiceImpl implements CarService {
     @Override
     public List<CarDetailsViewModel> findAll() {
         return carRepository
+                .findAll()
                 .stream()
                 .map(car -> this.modelMapper.map(car, CarDetailsViewModel.class))
                 .collect(Collectors.toList());
     }
 
     @Override
-    public String create(CarCreateBindingModel carCreateBindingModel) {
-        Car car = this.modelMapper.map(carCreateBindingModel, Car.class);
+    public String create(CarCreateServiceModel serviceModel) {
+        Car car = this.modelMapper.map(serviceModel, Car.class);
         this.carRepository.save(car);
         return car.getId();
     }

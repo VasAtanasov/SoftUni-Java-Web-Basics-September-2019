@@ -43,10 +43,37 @@
         <h1 class="text-center text-white">West Compass offers</h1>
         <hr style="width: 50%"/>
         <ul style="list-style-type: none">
-            {{replace}}
         </ul>
     </div>
 </main>
+<script src="../resources/js/requester.js"></script>
+<script>
+    let ul = document.querySelector("main div.container ul");
+    const carsJson = http.get("/api/cars").then(value => value.json());
+
+    carsJson.then(cars => {
+        cars.forEach(car => {
+            let li = document.createElement('li');
+            li.classList.add("text-white");
+            li.classList.add("text-center");
+            li.classList.add("font-weight-bold");
+
+            let h3 = document.createElement('h3');
+            h3.textContent = `Brand: ${car.brand}`;
+            let h4 = document.createElement('h4');
+            h4.textContent = `Mode: ${car.model}`;
+            let yearP = document.createElement('p');
+            yearP.textContent = `Year: ${car.year}`;
+            let engineP = document.createElement('p');
+            engineP.textContent = `Engine: ${car.engine}`;
+            li.appendChild(h3);
+            li.appendChild(h4);
+            li.appendChild(yearP);
+            li.appendChild(engineP);
+            ul.appendChild(li);
+        });
+    });
+</script>
 <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

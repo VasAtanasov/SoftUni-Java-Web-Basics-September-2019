@@ -1,6 +1,5 @@
-package app.domain.models.binding;
+package app.domain.models.service;
 
-import app.domain.enums.Engine;
 import lombok.*;
 
 @Getter
@@ -9,9 +8,9 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @Builder
-public class CarCreateBindingModel {
+public class CarCreateServiceModel {
     private String brand;
     private String model;
     private Integer year;
-    private Engine engine;
+    private String engine;
 }

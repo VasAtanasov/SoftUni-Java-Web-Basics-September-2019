@@ -1,8 +1,10 @@
 package app.web.rest;
 
 import app.domain.models.binding.CarCreateBindingModel;
+import app.domain.models.service.CarCreateServiceModel;
 import app.domain.models.view.CarDetailsViewModel;
 import app.service.CarService;
+import org.modelmapper.ModelMapper;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -21,6 +23,9 @@ public class CarEndpoint {
     @Inject
     private CarService carService;
 
+    @Inject
+    private ModelMapper modelMapper;
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAll() {
@@ -36,7 +41,7 @@ public class CarEndpoint {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response createCar(CarCreateBindingModel car, @Context UriInfo uriInfo) {
-        String savedCarId = carService.create(car);
+        String savedCarId = carService.create(this.modelMapper.map(car, CarCreateServiceModel.class));
 
         UriBuilder builder = uriInfo.getAbsolutePathBuilder();
         builder.path(savedCarId);
