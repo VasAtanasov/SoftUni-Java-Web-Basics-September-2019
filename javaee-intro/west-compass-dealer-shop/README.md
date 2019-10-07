@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Make sure u have `git` and `maven` installed.
+Make sure you have `git` and `maven` installed.
 
 Used versions:
 
@@ -13,8 +13,11 @@ Open windows console and clone the repository
 ```
 git clone https://github.com/VasAtanasov/SoftUni-Java-Web-Basics-September-2019.git
 ```
-Navigate to cd SoftUni-Java-Web-Basics-September-2019\javaee-intro\west-compass-dealer-shop
+Navigate to `SoftUni-Java-Web-Basics-September-2019\javaee-intro\west-compass-dealer-shop` and run the following command
 
+```mvn clean package tomee:run```
+
+Open the browser and navigate to http://localhost:8007
 
 ### West Compass Dealer Shop
 
