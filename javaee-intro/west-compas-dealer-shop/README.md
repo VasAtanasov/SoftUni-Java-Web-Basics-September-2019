@@ -53,4 +53,4 @@ Each car show
 
 ![site overview](../../z_resources/javaee-intro/media/image4.png)
 
-Document with tasks description: [Java-Web-Development-Basics-Introduction-to-Java-EE-Lab](../../z_resources/javaee-intro/05.Java-Web-Development-Basics-Introduction-to-Java-EE-Lab)
+Document with tasks description: [Java-Web-Development-Basics-Introduction-to-Java-EE-Lab](../../z_resources/javaee-intro/05.Java-Web-Development-Basics-Introduction-to-Java-EE-Lab.docx)
