@@ -9,13 +9,17 @@ Used versions:
  - Apache Maven 3.6.2
  - git version 2.23.0
 
-Open windows console and clone the repository
+Clone the repository.
+
 ```
 git clone https://github.com/VasAtanasov/SoftUni-Java-Web-Basics-September-2019.git
 ```
+
 Navigate to `SoftUni-Java-Web-Basics-September-2019\javaee-intro\west-compass-dealer-shop` and run the following command
 
-```mvn clean package tomee:run```
+```
+mvn clean package tomee:run
+```
 
 Open the browser and navigate to http://localhost:8007
 
