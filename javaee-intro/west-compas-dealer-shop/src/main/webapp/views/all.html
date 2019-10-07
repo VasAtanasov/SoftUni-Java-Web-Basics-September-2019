@@ -49,37 +49,38 @@
 <script src="../resources/js/requester.js"></script>
 <script>
     let ul = document.querySelector("main div.container ul");
-    const carsJson = http.get("/api/cars").then(value => value.json());
 
-    carsJson.then(cars => {
-        cars.forEach(car => {
-            let li = document.createElement('li');
-            li.classList.add("d-flex");
-            li.classList.add("justify-content-around");
-            let div = document.createElement('div');
-            div.classList.add("col-md-4");
-            div.classList.add("d-flex");
-            div.classList.add("flex-column");
-            div.classList.add("text-center");
-            div.classList.add("mb-3");
-            div.classList.add("text-white");
+    http.get("/api/cars")
+        .then(value => value.json())
+        .then(cars => {
+            cars.forEach(car => {
+                let li = document.createElement('li');
+                li.classList.add("d-flex");
+                li.classList.add("justify-content-around");
+                let div = document.createElement('div');
+                div.classList.add("col-md-4");
+                div.classList.add("d-flex");
+                div.classList.add("flex-column");
+                div.classList.add("text-center");
+                div.classList.add("mb-3");
+                div.classList.add("text-white");
 
-            let h2Brand = document.createElement('h2');
-            h2Brand.textContent = `Brand: ${car.brand}`;
-            let h4Model = document.createElement('h4');
-            h4Model.textContent = `Mode: ${car.model}`;
-            let h4Year = document.createElement('h4');
-            h4Year.textContent = `Year: ${car.year}`;
-            let h4Engine = document.createElement('h4');
-            h4Engine.textContent = `Engine: ${car.engine}`;
-            div.appendChild(h2Brand);
-            div.appendChild(h4Model);
-            div.appendChild(h4Year);
-            div.appendChild(h4Engine);
-            li.appendChild(div);
-            ul.appendChild(li);
+                let h2Brand = document.createElement('h2');
+                h2Brand.textContent = `Brand: ${car.brand}`;
+                let h4Model = document.createElement('h4');
+                h4Model.textContent = `Mode: ${car.model}`;
+                let h4Year = document.createElement('h4');
+                h4Year.textContent = `Year: ${car.year}`;
+                let h4Engine = document.createElement('h4');
+                h4Engine.textContent = `Engine: ${car.engine}`;
+                div.appendChild(h2Brand);
+                div.appendChild(h4Model);
+                div.appendChild(h4Year);
+                div.appendChild(h4Engine);
+                li.appendChild(div);
+                ul.appendChild(li);
+            });
         });
-    });
 </script>
 <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
