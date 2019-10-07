@@ -13,8 +13,8 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Entity
 @Builder
+@Entity
 @Table(name = "cars")
 public class Car extends BaseEntity {
 
