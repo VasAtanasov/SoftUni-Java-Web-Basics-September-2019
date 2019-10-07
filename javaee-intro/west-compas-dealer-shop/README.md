@@ -27,7 +27,7 @@ It should support only a GET request.
 
 It should return the following HTML page, upon a `GET` request.
 
-![site overview](../z_resources/javaee-intro/media/image1.png)
+![site overview](../../z_resources/javaee-intro/media/image1.png)
  
 3 Car Create Servlet
 
@@ -37,7 +37,7 @@ It should support `GET` & `POST` requests.
 
 It should return the following HTML page, upon a `GET` request.
 
-![site overview](../z_resources/javaee-intro/media/image2.png)
+![site overview](../../z_resources/javaee-intro/media/image2.png)
  
 4 All Cars Servlet
 
@@ -47,10 +47,10 @@ It should support only a `GET` request.
 
 It should return the following HTML page, upon a `GET` request.
 
-![site overview](../z_resources/javaee-intro/media/image3.png)
+![site overview](../../z_resources/javaee-intro/media/image3.png)
 
 Each car show
 
-![site overview](../z_resources/javaee-intro/media/image4.png)
+![site overview](../../z_resources/javaee-intro/media/image4.png)
 
 Document with tasks description: [Java-Web-Development-Basics-Introduction-to-Java-EE-Lab](../z_resources/javaee-intro/05.Java-Web-Development-Basics-Introduction-to-Java-EE-Lab)
