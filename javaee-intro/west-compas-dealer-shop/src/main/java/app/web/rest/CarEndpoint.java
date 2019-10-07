@@ -13,9 +13,6 @@ import javax.ws.rs.core.*;
 import javax.ws.rs.core.Response.Status;
 import java.util.List;
 
-/**
- * @author Vasil Atanasov
- */
 @RequestScoped
 @Path("/cars")
 public class CarEndpoint {
