@@ -1,0 +1,1 @@
+<h4 class="text-white">No offers to be displayed. <a href="/cars/create">Upload some</a>?</h4>
