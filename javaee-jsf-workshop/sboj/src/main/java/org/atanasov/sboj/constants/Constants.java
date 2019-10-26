@@ -23,9 +23,8 @@ public final class Constants {
     public static final String LOGOUT_URL = "/logout";
     public static final String HOME_URL = "/home";
 
-
-
-
+    public static final String APPLICATION_URL = "/jobs";
+    public static final String APPLICATION_ADD_URL = APPLICATION_URL + "/add";
 
     private Constants() {
     }

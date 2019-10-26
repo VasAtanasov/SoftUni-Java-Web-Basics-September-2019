@@ -24,7 +24,7 @@ import static org.atanasov.sboj.constants.Constants.LOGIN_URL;
 @NoArgsConstructor
 public class UserRegisterBean {
 
-    private Logger logger;
+    private Logger logger = Logger.getLogger(UserRegisterBean.class.getName());
 
     @Inject
     private UserService userService;
