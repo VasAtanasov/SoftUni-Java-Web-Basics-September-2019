@@ -28,11 +28,6 @@ public final class ModelMapperWrapperImpl implements ModelMapperWrapper {
     }
 
     @Override
-    public <D, T extends HttpServletRequest> D map(T req, Class<D> outClass) {
-        return modelMapper.map(getPropertyMap(req), outClass);
-    }
-
-    @Override
     public <D, T> D map(T entity, Class<D> outClass, PropertyMap<T, D> propertyMap) {
         this.modelMapper.addMappings(propertyMap);
         return this.map(entity, outClass);
@@ -49,6 +44,11 @@ public final class ModelMapperWrapperImpl implements ModelMapperWrapper {
     public <S, D> D map(final S source, D destination) {
         this.modelMapper.map(source, destination);
         return destination;
+    }
+
+    @Override
+    public <D, T extends HttpServletRequest> D map(T req, Class<D> outClass) {
+        return modelMapper.map(getPropertyMap(req), outClass);
     }
 
     private Map<String, String> getPropertyMap(HttpServletRequest req) {
