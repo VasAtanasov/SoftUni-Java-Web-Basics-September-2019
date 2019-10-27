@@ -51,6 +51,8 @@ public class RewriteServletConfig extends HttpConfigurationProvider {
                 .addRule(Join.path(HOME_URL).to("/faces/views/home.xhtml"))
                 .addRule(Join.path(LOGIN_URL).to("/faces/views/login.xhtml"))
                 .addRule(Join.path(REGISTER_URL).to("/faces/views/register.xhtml"))
-                .addRule(Join.path(APPLICATION_ADD_URL).to("/faces/views/job-add.xhtml"));
+                .addRule(Join.path(JOBS_ADD_URL).to("/faces/views/job-add.xhtml"))
+                .addRule(Join.path(JOBS_DETAILS_URL).to("/faces/views/job-details.xhtml"))
+                .addRule(Join.path(JOBS_DELETE_URL).to("/faces/views/job-delete.xhtml"));
     }
 }

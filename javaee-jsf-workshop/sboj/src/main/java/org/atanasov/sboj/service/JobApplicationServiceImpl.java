@@ -8,6 +8,7 @@ import org.atanasov.sboj.util.ModelMapperWrapper;
 
 import javax.inject.Inject;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class JobApplicationServiceImpl implements JobApplicationService {
@@ -16,11 +17,11 @@ public class JobApplicationServiceImpl implements JobApplicationService {
     private final ModelMapperWrapper modelMapper;
 
     @Inject
-    public JobApplicationServiceImpl(JobApplicationRepository jobApplicationRepository, ModelMapperWrapper modelMapper) {
+    public JobApplicationServiceImpl(JobApplicationRepository jobApplicationRepository,
+                                     ModelMapperWrapper modelMapper) {
         this.jobApplicationRepository = jobApplicationRepository;
         this.modelMapper = modelMapper;
     }
-
 
     @Override
     public List<JobApplicationViewModel> getAllJobsApplications() {
@@ -33,5 +34,17 @@ public class JobApplicationServiceImpl implements JobApplicationService {
     @Override
     public void addJobApplication(JobAddServiceModel model) {
         jobApplicationRepository.save(modelMapper.map(model, JobApplication.class));
+    }
+
+    @Override
+    public JobApplicationViewModel findById(String id) {
+        return modelMapper.map(jobApplicationRepository.find(id), JobApplicationViewModel.class);
+    }
+
+    @Override
+    public void delete(String id) {
+        Optional<JobApplication> application = jobApplicationRepository.findOptional(id);
+        application.orElseThrow(() -> new IllegalArgumentException("Job Application not found"));
+        jobApplicationRepository.remove(application.get());
     }
 }

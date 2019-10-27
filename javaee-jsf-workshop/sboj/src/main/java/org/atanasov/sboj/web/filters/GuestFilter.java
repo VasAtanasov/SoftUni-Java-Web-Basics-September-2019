@@ -12,7 +12,10 @@ import static org.atanasov.sboj.constants.Constants.*;
 @WebFilter(
         {
                 HOME_URL,
-                LOGOUT_URL
+                LOGOUT_URL,
+                JOBS_ADD_URL,
+                JOBS_DELETE_URL,
+                JOBS_DETAILS_URL
         }
 )
 public class GuestFilter implements Filter {

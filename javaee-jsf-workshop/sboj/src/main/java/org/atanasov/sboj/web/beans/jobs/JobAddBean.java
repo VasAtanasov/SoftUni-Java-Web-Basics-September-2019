@@ -63,8 +63,4 @@ public class JobAddBean {
         }
     }
 
-    public Sector[] getSector() {
-        return Sector.values();
-    }
-
 }

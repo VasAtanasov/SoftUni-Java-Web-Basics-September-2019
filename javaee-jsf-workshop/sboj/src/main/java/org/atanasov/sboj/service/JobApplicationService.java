@@ -9,4 +9,8 @@ public interface JobApplicationService {
     List<JobApplicationViewModel> getAllJobsApplications();
 
     void addJobApplication(JobAddServiceModel model);
+
+    JobApplicationViewModel findById(String id);
+
+    void delete(String id);
 }

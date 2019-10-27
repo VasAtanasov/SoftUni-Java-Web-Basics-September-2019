@@ -17,8 +17,8 @@
                 <h:selectOneMenu value="#{jobAddBean.sector}" required="true" label="Sector"
                                  id="sector" styleClass="form-control">
                     <f:selectItem itemLabel="Please select one" noSelectionOption="true"/>
-                    <f:selectItems value="#{jobAddBean.sector}" var="sector"
-                                   itemValue="#{sector}" itemLabel="#{sector.label}"/>
+                    <f:selectItems value="#{jobSectorBean.sector}" var="sector" itemValue="#{sector}"
+                                   itemLabel="#{sector.label}"/>
                 </h:selectOneMenu>
             </div>
             <div class="form-group">
