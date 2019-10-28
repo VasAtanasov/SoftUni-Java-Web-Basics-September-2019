@@ -15,7 +15,6 @@ import java.util.logging.Logger;
 import static org.atanasov.judge.constants.Constants.PASSWORD_ATTR;
 import static org.atanasov.judge.constants.Constants.USERNAME_ATTR;
 
-
 public class UserServiceImpl implements UserService {
 
     private static final Logger logger = Logger.getLogger(UserServiceImpl.class.getName());

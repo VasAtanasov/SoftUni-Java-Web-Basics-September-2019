@@ -26,7 +26,13 @@ public final class Constants {
     public static final String PROBLEMS_URL = "/problems";
 
     public static final String CREATE_URL = "/create";
-    public static final String PROBLEMS_CREATE_URL = PROBLEMS_URL + "/create";
+    public static final String SUBMIT_URL = "/submit";
+    public static final String DETAILS_URL = "/details";
+
+
+    public static final String PROBLEMS_CREATE_URL = PROBLEMS_URL + CREATE_URL;
+    public static final String PROBLEMS_SUBMIT_URL = PROBLEMS_URL + SUBMIT_URL;
+    public static final String PROBLEMS_DETAILS_URL = PROBLEMS_URL + DETAILS_URL;
 
 
     private Constants() {

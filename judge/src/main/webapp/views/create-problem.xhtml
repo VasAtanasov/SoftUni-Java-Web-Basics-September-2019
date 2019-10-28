@@ -1,0 +1,30 @@
+<ui:composition template="templates/base-layout.xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+>
+    <ui:define name="main-content">
+        <h1 class="text-judge text-center font-weight-bold">Create Problem</h1>
+        <hr class="hr-2 bg-judge w-25"/>
+        <h:form id="create-problem-form" class="form w-25 mx-auto" action="/problem/create" method="post">
+            <div class="form-group">
+                <div class="d-flex justify-content-center">
+                    <h:outputLabel for="name" styleClass="text-judge font-weight-bold" value="Name"/>
+                </div>
+                <h:inputText value="#{problemCreateBean.name}" styleClass="form-control" id="name" required="true" label="Name"/>
+            </div>
+            <div class="form-group">
+                <div class="d-flex justify-content-center">
+                    <h:outputLabel for="name" styleClass="text-judge font-weight-bold" value="Total Points"/>
+                </div>
+                <h:inputText value="#{problemCreateBean.points}" required="true" label="Total Points" pt:type="number" pt:step="0" pt:min="0" styleClass="form-control" id="total-points"/>
+            </div>
+            <hr class="hr-2 bg-judge"/>
+            <div id="button-holder" class="d-flex justify-content-center">
+                <h:commandButton action="#{problemCreateBean.create}" styleClass="btn btn-judge" value="Create"/>
+            </div>
+            <h:messages styleClass="error-msg"/>
+            <hr class="hr-2 bg-judge"/>
+        </h:form>
+    </ui:define>
+</ui:composition>

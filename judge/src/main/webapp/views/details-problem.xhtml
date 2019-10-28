@@ -1,0 +1,50 @@
+<ui:composition template="templates/base-layout.xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="main-content">
+        <h1 class="text-center text-judge">Problem Details - #{problemDetailsBean.viewModel.name}</h1>
+        <hr class="hr-2 bg-judge"/>
+        <div class="d-flex justify-content-between">
+            <h2 class="text-judge">Problem Id - #{problemDetailsBean.viewModel.id}</h2>
+            <h2 class="text-judge">
+                Success Rate -
+                <h:outputText value="#{problemDetailsBean.viewModel.successRate}">
+                    <f:convertNumber pattern="#0.00"/>
+                </h:outputText>
+                %
+            </h2>
+        </div>
+        <hr class="hr-2 bg-judge"/>
+        <h3 class="text-judge text-center">Problem Submissions</h3>
+        <hr class="hr-2 bg-judge"/>
+        <table class="table table-hover text-judge">
+            <thead>
+            <tr class="row">
+                <th class="col-md-4" scope="col"><h5 class="text-center">Submission</h5></th>
+                <th class="col-md-3" scope="col"><h5 class="text-center">User</h5></th>
+                <th class="col-md-3" scope="col"><h5 class="text-center">Achieved Result</h5></th>
+                <th class="col-md-2" scope="col"><h5 class="text-center">Actions</h5></th>
+            </tr>
+            </thead>
+            <tbody>
+            <ui:repeat value="#{problemDetailsBean.viewModel.submissions}" var="submission">
+                <tr class="row">
+                    <td class="col-md-4" scope="col"><h5 class="text-center">#{submission.id}</h5></td>
+                    <td class="col-md-3" scope="col"><h5 class="text-center">#{submission.userUsername}</h5></td>
+                    <td class="col-md-3" scope="col"><h2
+                            class="text-center">#{submission.achievedResult} / #{problemDetailsBean.viewModel.points} (#{submission.achievedPercentage} %)</h2>
+                    </td>
+                    <td class="col-md-2 d-flex justify-content-around" scope="col">
+                        <a href="/submissions/details?=id#{submission.id}"
+                           class="btn bg-judge text-white font-weight-bold pt-2"><h4>Details</h4></a>
+                    </td>
+                </tr>
+            </ui:repeat>
+            </tbody>
+        </table>
+        <hr class="hr-2 bg-judge"/>
+    </ui:define>
+</ui:composition>
