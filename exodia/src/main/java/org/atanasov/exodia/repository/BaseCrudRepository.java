@@ -92,8 +92,7 @@ public abstract class BaseCrudRepository<E, PK extends Serializable> implements 
     public void remove(E entity) {
         try {
             this.entityManager.remove(entityManager.contains(entity) ? entity : entityManager.merge(entity));
-        } catch (IllegalArgumentException | TransactionRequiredException e) {
-        }
+        } catch (IllegalArgumentException | TransactionRequiredException e) {}
     }
 
     @Override

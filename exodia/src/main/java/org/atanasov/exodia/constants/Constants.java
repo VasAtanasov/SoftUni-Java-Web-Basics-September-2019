@@ -23,10 +23,13 @@ public final class Constants {
     public static final String LOGOUT_URL = "/logout";
     public static final String HOME_URL = "/home";
 
+    public static final String SCHEDULE_URL = "/schedule";
+    public static final String DELETE_URL = "/delete";
+    public static final String DETAILS_URL = "/details";
+    public static final String PRINT_URL = "/print";
+
+
     public static final String DOCUMENTS_URL = "/documents";
-    public static final String SCHEDULE_DOCUMENTS_URL = DOCUMENTS_URL + "/schedule";
-    public static final String DELETE_DOCUMENTS_URL = DOCUMENTS_URL + "/delete";
-    public static final String DETAILS_DOCUMENTS_URL = DOCUMENTS_URL + "/details";
 
     private Constants() {
     }

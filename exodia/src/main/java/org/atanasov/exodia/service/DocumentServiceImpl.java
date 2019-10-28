@@ -17,13 +17,10 @@ public class DocumentServiceImpl implements DocumentService {
     private static final Function<DocumentTitleViewModel, DocumentTitleViewModel> MAP_TITLE =
             document -> {
                 String title = document.getTitle();
-
                 if (title.length() > 12) {
-                    title = title.substring(0, 12);
+                    title = title.substring(0, 12) + "...";
+                    document.setTitle(title);
                 }
-
-                document.setTitle(title + "...");
-
                 return document;
             };
 
@@ -50,4 +47,16 @@ public class DocumentServiceImpl implements DocumentService {
         Document document = documentRepository.save(modelMapper.map(model, Document.class));
         return modelMapper.map(document, DocumentViewModel.class);
     }
+
+    @Override
+    public DocumentViewModel findById(String id) {
+        return modelMapper.map(documentRepository.find(id), DocumentViewModel.class);
+    }
+
+    @Override
+    public void print(String id) {
+        documentRepository.remove(id);
+    }
+
+
 }

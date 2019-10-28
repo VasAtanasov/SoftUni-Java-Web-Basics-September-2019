@@ -10,4 +10,8 @@ public interface DocumentService {
     List<DocumentTitleViewModel> getTitles();
 
     DocumentViewModel scheduleDocument(DocumentScheduleServiceModel model);
+
+    DocumentViewModel findById(String id);
+
+    void print(String id);
 }

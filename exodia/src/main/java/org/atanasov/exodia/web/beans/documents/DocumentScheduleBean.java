@@ -14,7 +14,7 @@ import javax.inject.Inject;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import static org.atanasov.exodia.constants.Constants.DETAILS_DOCUMENTS_URL;
+import static org.atanasov.exodia.constants.Constants.DETAILS_URL;
 
 @Model
 @Getter
@@ -47,7 +47,7 @@ public class DocumentScheduleBean {
 
         try {
             DocumentViewModel viewModel = documentService.scheduleDocument(model);
-            redirectService.redirect(DETAILS_DOCUMENTS_URL + "?id=" + viewModel.getId());
+            redirectService.redirect(DETAILS_URL + "?id=" + viewModel.getId());
         } catch (Exception ex) {
             messageService.addMessage("Could not schedule document. Please try again.");
         }

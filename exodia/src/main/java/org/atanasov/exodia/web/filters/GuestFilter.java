@@ -13,9 +13,10 @@ import static org.atanasov.exodia.constants.Constants.*;
         {
                 HOME_URL,
                 LOGOUT_URL,
-                SCHEDULE_DOCUMENTS_URL,
-                DELETE_DOCUMENTS_URL,
-                DETAILS_DOCUMENTS_URL
+                SCHEDULE_URL,
+                DELETE_URL,
+                DETAILS_URL,
+                PRINT_URL
         }
 )
 public class GuestFilter implements Filter {
