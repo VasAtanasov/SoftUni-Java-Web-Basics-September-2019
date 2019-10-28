@@ -29,7 +29,9 @@ A copy of Tomee version 8.0.0-M3 will be downloaded and managed by tomee maven p
 
 Open the browser and navigate to http://localhost:8007
 
-## EXODIA (Enterprise Xerox Open Delivery Information Application) is an application which manages a queue of documents to be printed. Normally this process is managed by the printers (after all it’s the 21st century). However, some companies do not think like that and they use printers from BC. One such company is the ORACLE corporation (Obscurely Ruthless Amateur Crazy Lunatic Employees), which has hired you to implement the EXODIA application platform.
+## EXODIA
+
+EXODIA (Enterprise Xerox Open Delivery Information Application) is an application which manages a queue of documents to be printed. Normally this process is managed by the printers (after all it’s the 21st century). However, some companies do not think like that and they use printers from BC. One such company is the ORACLE corporation (Obscurely Ruthless Amateur Crazy Lunatic Employees), which has hired you to implement the EXODIA application platform.
 
 ### Database Requirements
 
