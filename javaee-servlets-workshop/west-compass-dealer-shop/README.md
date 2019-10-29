@@ -2,35 +2,6 @@
 
 ## Java EE Workshop – Servlets & JSP
 
-## Instructions
-
-Make sure you have `git` and `maven` installed.
-
-Used versions:
-
-- OpenJDK 13
-- Apache Maven 3.6.2
-- git version 2.23.0
-- MySQL Community Server 8.0.17
-
-Clone the repository.
-
-```
-git clone https://github.com/VasAtanasov/SoftUni-Java-Web-Basics-September-2019.git
-```
-
-Navigate to `SoftUni-Java-Web-Basics-September-2019\javaee-intro\west-compass-dealer-shop` and run the following command
-
-```
-mvn clean package tomee:run
-```
-
-This may take a while for maven to download all the dependencies.
-
-A copy of Tomee version 8.0.0-M3 will be downloaded and managed by tomee maven plugin.
-
-Open the browser and navigate to http://localhost:8007
-
 ### West Compass Car Dealer Shop
 
 West Compass Dealer Shop is an web application where you can add your car offers. There are two main entities, Users and Cars .
@@ -121,4 +92,4 @@ The Security Requirements are mainly access requirements. Configurations about w
 - Users (logged in) can access Cars All page.
 - Users (logged in) can access Logout functionality.
 
-Document with tasks description: [Java-Web-Development-Basics-Workshop-JSP](../../z_resources/javaee-servlets-workshop/08.Java-Web-Development-Basics-Workshop-JSP.docx)
+[Resources](../../z_resources/javaee-servlets-workshop)

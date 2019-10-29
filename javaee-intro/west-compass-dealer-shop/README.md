@@ -1,34 +1,5 @@
 # Lab: Introduction to Java EE
 
-## Instructions
-
-Make sure you have `git` and `maven` installed.
-
-Used versions:
-
-- OpenJDK 13
-- Apache Maven 3.6.2
-- git version 2.23.0
-- MySQL Community Server 8.0.17
-
-Clone the repository.
-
-```
-git clone https://github.com/VasAtanasov/SoftUni-Java-Web-Basics-September-2019.git
-```
-
-Navigate to `SoftUni-Java-Web-Basics-September-2019\javaee-intro\west-compass-dealer-shop` and run the following command
-
-```
-mvn clean package tomee:run
-```
-
-This may take a while for maven to download all the dependencies.
-
-A copy of Tomee version 8.0.0-M3 will be downloaded and managed by tomee maven plugin.
-
-Open the browser and navigate to http://localhost:8007
-
 ## West Compass Dealer Shop
 
 West Compass Dealer Shop is an application in which you register cars, with several properties.
@@ -82,4 +53,4 @@ Each car show
 
 ![site overview](../../z_resources/javaee-intro/media/image4.png)
 
-Document with tasks description: [Java-Web-Development-Basics-Introduction-to-Java-EE-Lab](../../z_resources/javaee-intro/05.Java-Web-Development-Basics-Introduction-to-Java-EE-Lab.docx)
+[Resources](../../z_resources/javaee-intro)

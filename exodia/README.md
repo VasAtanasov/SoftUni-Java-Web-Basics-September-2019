@@ -1,34 +1,5 @@
 # Java Web Development Basics Regular Exam
 
-## Instructions
-
-Make sure you have `git` and `maven` installed.
-
-Used versions:
-
-- OpenJDK 13
-- Apache Maven 3.6.2
-- git version 2.23.0
-- MySQL Community Server 8.0.17
-
-Clone the repository.
-
-```
-git clone https://github.com/VasAtanasov/SoftUni-Java-Web-Basics-September-2019.git
-```
-
-Navigate to `SoftUni-Java-Web-Basics-September-2019\javaee-intro\west-compass-dealer-shop` and run the following command
-
-```
-mvn clean package tomee:run
-```
-
-This may take a while for maven to download all the dependencies.
-
-A copy of Tomee version 8.0.0-M3 will be downloaded and managed by tomee maven plugin.
-
-Open the browser and navigate to http://localhost:8007
-
 ## EXODIA
 
 EXODIA (Enterprise Xerox Open Delivery Information Application) is an application which manages a queue of documents to be printed. Normally this process is managed by the printers (after all it’s the 21st century). However, some companies do not think like that and they use printers from BC. One such company is the ORACLE corporation (Obscurely Ruthless Amateur Crazy Lunatic Employees), which has hired you to implement the EXODIA application platform.
@@ -37,7 +8,7 @@ EXODIA (Enterprise Xerox Open Delivery Information Application) is an applicatio
 
 The Database of EXODIA needs to support 2 entities:
 
-User	
+User
 
 - Has an Id – a UUID String
 - Has a Username
@@ -176,7 +147,5 @@ The Content of the Document should be formatted (as specified above) and rendere
 ##### Code Quality – 30 points.
 
 ##### Bonus – 10 points.
-
-Document with tasks description: [EXODIA](../z_resources/exodia/EXODIA_Условие.docx)
 
 Resources: [Resources](../z_resources/exodia)
