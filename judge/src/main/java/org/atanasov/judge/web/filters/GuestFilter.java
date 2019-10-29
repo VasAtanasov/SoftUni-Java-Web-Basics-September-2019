@@ -13,6 +13,10 @@ import static org.atanasov.judge.constants.Constants.*;
         {
                 HOME_URL,
                 LOGOUT_URL,
+                PROBLEMS_DETAILS_URL,
+                PROBLEMS_CREATE_URL,
+                PROBLEMS_SUBMIT_URL,
+                SUBMISSION_DETAILS_URL
         }
 )
 public class GuestFilter implements Filter {

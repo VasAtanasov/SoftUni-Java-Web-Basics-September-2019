@@ -53,3 +53,9 @@ textarea {
     grid-template-rows: auto;
     grid-gap: 1.5rem 3rem;
 }
+
+.error-msg {
+    color: red;
+    margin: 8px;
+    text-align: center
+}

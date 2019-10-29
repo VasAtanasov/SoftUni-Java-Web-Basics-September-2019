@@ -2,6 +2,7 @@ package org.atanasov.judge.web.beans.users;
 
 import lombok.Getter;
 import org.atanasov.judge.domain.models.view.ProblemHomeViewModel;
+import org.atanasov.judge.service.JavaScriptExecutorService;
 import org.atanasov.judge.service.ProblemService;
 
 import javax.annotation.PostConstruct;
@@ -20,6 +21,7 @@ public class HomeBean {
 
     @Inject
     private ProblemService problemService;
+
 
     @Inject
     private HttpServletRequest request;

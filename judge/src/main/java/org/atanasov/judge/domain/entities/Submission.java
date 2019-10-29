@@ -1,8 +1,6 @@
 package org.atanasov.judge.domain.entities;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.atanasov.judge.util.LocalDateTimeAttributeConverter;
 
 import javax.persistence.*;
@@ -13,15 +11,18 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Table(name = "submissions")
 public class Submission extends BaseEntity {
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(
             name = "submission_code",
             joinColumns = @JoinColumn(name = "submission_id")
     )
     @Column(name = "code", nullable = false, columnDefinition = "TEXT")
+    @Singular(value = "code")
     private List<String> code;
 
     @Column(name = "achieved_result", nullable = false, columnDefinition = "INT DEFAULT 0")

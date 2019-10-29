@@ -38,8 +38,10 @@
                             class="text-center">#{submission.achievedResult} / #{problemDetailsBean.viewModel.points} (#{submission.achievedPercentage} %)</h2>
                     </td>
                     <td class="col-md-2 d-flex justify-content-around" scope="col">
-                        <a href="/submissions/details?=id#{submission.id}"
-                           class="btn bg-judge text-white font-weight-bold pt-2"><h4>Details</h4></a>
+                        <h:outputLink value="/submissions/details" styleClass="btn bg-judge text-white font-weight-bold pt-2">
+                            <h4>Details</h4>
+                            <f:param name="submission_id" value="#{submission.id}"/>
+                        </h:outputLink>
                     </td>
                 </tr>
             </ui:repeat>

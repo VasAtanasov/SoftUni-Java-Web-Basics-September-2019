@@ -1,5 +1,5 @@
 INSERT INTO users (id, username, password, email) VALUES
-       ('eef8c718-b25e-11e9-a2a3-2a2ae2dbcce4','vas','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','vas.atanasov@gmail.com');
+       ('eef8c718-b25e-11e9-a2a3-2a2ae2dbcce4','vas','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','vas.vas@vas.com');
 insert into job_applications (id, sector, profession, salary, description) values ('38ed1a93-6abb-47c0-bfd0-ffbccc96b757', 'SECURITY', 'Physician', 5060.3, 'ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec');
 insert into job_applications (id, sector, profession, salary, description) values ('8b9d884b-ccdd-47a5-a894-e14b0529b9d5', 'MEDICINE', 'Database administrator', 4232.81, 'nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien');
 insert into job_applications (id, sector, profession, salary, description) values ('dd148c94-97fe-4457-bdb8-2ccc591a80f2', 'FOOD', 'Database administrator', 3816.43, 'sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis');

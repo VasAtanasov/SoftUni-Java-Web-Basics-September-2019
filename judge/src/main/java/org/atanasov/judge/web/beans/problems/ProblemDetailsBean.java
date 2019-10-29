@@ -25,7 +25,7 @@ public class ProblemDetailsBean {
 
     @PostConstruct
     public void init() {
-        String id = requestMap.get("id");
+        String id = requestMap.get("problem_id");
         viewModel = problemService.getProblemById(id);
     }
 }

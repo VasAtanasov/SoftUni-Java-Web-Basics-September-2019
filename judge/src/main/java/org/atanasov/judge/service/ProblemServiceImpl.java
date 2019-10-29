@@ -33,11 +33,7 @@ public class ProblemServiceImpl implements ProblemService {
 
     @Override
     public List<ProblemHomeViewModel> getAllProblems(String id) {
-        Map<String, Object> params = new LinkedHashMap<>() {{
-            put("user_id", id);
-        }};
-
-        return problemRepository.findByNamedQueryAndNamedParams(Problem.FIND_WITH_USER_SUBMISSIONS, params)
+        return problemRepository.findByNamedQuery(Problem.FIND_WITH_USER_SUBMISSIONS)
                 .stream()
                 .map(problem -> {
                     ProblemHomeViewModel model = modelMapper.map(problem, ProblemHomeViewModel.class);
@@ -47,11 +43,12 @@ public class ProblemServiceImpl implements ProblemService {
                             .filter(submission -> submission.getUser().getId().equals(id))
                             .max(Comparator.comparingInt(Submission::getAchievedResult))
                             .map(Submission::getAchievedResult)
-                            .get();
+                            .orElse(0);
 
                     double percent = (userAchievedResult * 100.0) / problem.getPoints();
 
                     model.setCompletion((int) Math.round(percent));
+
                     return model;
                 })
                 .collect(Collectors.toList());
@@ -92,7 +89,9 @@ public class ProblemServiceImpl implements ProblemService {
                             .filter(sub -> problem.getPoints().equals(sub.getAchievedResult()))
                             .count();
 
-                    double successRate = (totalMaxResult * 100.0) / model.getSubmissions().size();
+                    final int size = model.getSubmissions().size() == 0 ? 1 : model.getSubmissions().size();
+
+                    double successRate = (totalMaxResult * 100.0) / size;
 
                     model.setSuccessRate(successRate);
 

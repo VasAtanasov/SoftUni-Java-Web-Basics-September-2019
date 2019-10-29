@@ -1,5 +1,6 @@
 package org.atanasov.judge.domain.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,15 +12,16 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "problems")
 @NamedQueries({
         @NamedQuery(
                 name = "Problem.findWithUserSubmission",
-                query = "SELECT DISTINCT(p) FROM Problem p LEFT JOIN FETCH p.submissions s WHERE s.user.id = :user_id"
+                query = "SELECT DISTINCT(p) FROM Problem p LEFT JOIN FETCH p.submissions"
         ),
         @NamedQuery(
                 name = "Problem.findByIdWithUserSubmission",
-                query = "SELECT p FROM Problem p LEFT JOIN FETCH p.submissions s WHERE p.id = :problem_id"
+                query = "SELECT p FROM Problem p LEFT JOIN FETCH p.submissions s WHERE p.id = :problem_id ORDER BY s.createdOn DESC"
         )
 })
 public class Problem extends BaseEntity {
