@@ -12,9 +12,6 @@ Used versions:
 - Apache Maven 3.6.2
 - git version 2.23.0
 - MySQL Community Server 8.0.17
-- lombok 1.18.10
-
-Note: make your IDE supports lombok plugin.
 
 Clone the repository.
 
