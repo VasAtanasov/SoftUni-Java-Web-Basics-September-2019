@@ -36,7 +36,7 @@ public class UserValidationServiceImpl implements UserValidationService {
     public boolean isGenderValid(String gender) {
         return List.of(Gender.values())
                 .stream()
-                .allMatch(g -> g.name().equalsIgnoreCase(gender));
+                .anyMatch(g -> g.name().equalsIgnoreCase(gender));
     }
 
     @Override
