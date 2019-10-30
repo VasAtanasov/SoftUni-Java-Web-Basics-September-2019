@@ -1,4 +1,4 @@
-package org.atanasov.judge.util;
+package org.atanasov.casebook.util;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
