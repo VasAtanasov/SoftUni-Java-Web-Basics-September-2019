@@ -25,7 +25,7 @@
         <tomee.classifier>webprofile</tomee.classifier>
 
         <javaee.api.version>8.0.1</javaee.api.version>
-        <mysql.connector.version>8.0.17</mysql.connector.version>
+        <mysql.connector.version>8.0.28</mysql.connector.version>
         <hibernate.version>5.4.5.Final</hibernate.version>
         <lombok.version>1.18.10</lombok.version>
         <modelmapper.version>2.3.5</modelmapper.version>
