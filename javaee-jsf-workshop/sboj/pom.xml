@@ -31,7 +31,7 @@
         <modelmapper.version>2.3.5</modelmapper.version>
         <jstl.version>1.2</jstl.version>
         <commons.codec.version>1.12</commons.codec.version>
-        <primefaces.version>6.2</primefaces.version>
+        <primefaces.version>8.0</primefaces.version>
         <omnifaces.version>3.2</omnifaces.version>
         <rewrite-servlet.version>3.4.2.Final</rewrite-servlet.version>
     </properties>
